@@ -76,18 +76,18 @@
     <td colspan="4"><label><h3><b>LOGIN DETAILS</b></h3></label></td>
   </tr>
   <tr>
-    <td><%= f.label :email%></td>
+    <td><%= f.label "Email "%><font color="red">*</font></td>
     <td><%= f.email_field :email%>
     <span style="color:red;"><%= @user.errors[:email][0] rescue nil%></span></td>
-      
+
     </td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td><%= f.label :password%></td>
+    <td><%= f.label "Password "%><font color="red">*</font></td>
     <td><%= f.password_field :password%></td>
-    <td><%= f.label :"Confirm Password"%></td>
+    <td><%= f.label "Confirm Password "%><font color="red">*</font></td>
     <td><%= f.password_field :password_confirmation%></td>
   </tr>
 </table>
