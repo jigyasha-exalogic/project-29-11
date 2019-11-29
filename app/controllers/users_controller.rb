@@ -50,7 +50,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation, :fname, :lname, :age, :date_of_joining, :salary_per_annum, :salary_per_month, :phonenumber, :address, :blood_type, :emergency_name, :emergency_number, :primary_skill, :secondary_skill1, :secondary_skill2, :notice, :gender, :state, :pincode, :city, :country)
+    params.require(:user).permit(:email, :password, :password_confirmation, :fname, :lname, :age, :date_of_joining, :salary_per_annum, :salary_per_month, :contact, :address, :blood_type, :emergency_name, :emergency_number, :primary_skill, :secondary_skill1, :secondary_skill2, :notice, :gender, :state, :pincode, :city, :country)
   end
 
   def admin?

@@ -30,7 +30,7 @@
     <td><%= f.label "Salary per annum "%><font color="red">*</font></td>
     <td><%= f.number_field :salary_per_annum, :required => true, :min => 0%></td>
     <td><%= f.label "Contact Number "%><font color="red">*</font></td>
-    <td><%= f.text_field :phonenumber, :pattern=>'\d*', :maxlength=>10, :minlength=>10, :required => true %></td>
+    <td><%= f.text_field :contact, :pattern=>'\d*', :maxlength=>10, :minlength=>10, :required => true %></td>
   </tr>
   <tr>
     <td><%= f.label "Address "%><font color="red">*</font></td>

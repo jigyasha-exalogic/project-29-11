@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2019_11_28_043652) do
     t.date "date_of_joining"
     t.decimal "salary_per_annum"
     t.decimal "salary_per_month"
-    t.string "phonenumber"
+    t.string "contact"
     t.text "address"
     t.string "blood_type"
     t.string "emergency_name"
