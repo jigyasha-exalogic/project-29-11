@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_28_043652) do
+ActiveRecord::Schema.define(version: 2019_11_25_103841) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email"
@@ -27,22 +27,21 @@ ActiveRecord::Schema.define(version: 2019_11_28_043652) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "fname"
     t.string "lname"
+    t.string "phone"
+    t.string "enumber"
+    t.string "pincode"
     t.integer "age"
-    t.date "date_of_joining"
-    t.decimal "salary_per_annum"
-    t.decimal "salary_per_month"
-    t.string "phonenumber"
+    t.decimal "spa"
+    t.decimal "spm"
     t.text "address"
-    t.string "blood_type"
-    t.string "emergency_name"
-    t.string "emergency_number"
-    t.string "primary_skill"
-    t.string "secondary_skill1"
-    t.string "secondary_skill2"
+    t.string "blood"
+    t.string "ename"
+    t.string "ps"
+    t.string "ss1"
+    t.string "ss2"
     t.integer "notice"
     t.string "gender"
     t.string "state"
-    t.string "pincode"
     t.string "city"
     t.string "role"
     t.string "country"

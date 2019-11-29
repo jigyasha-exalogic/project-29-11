@@ -22,13 +22,13 @@
   </tr>
   <tr>
     <td><%= f.label "Blood Group "%></td>
-    <td><%= f.select :blood_type, [['Blood Group',nil],'AB+','AB-','A+','A-','B+','B-','O+','O-']%></td>
+    <td><%= f.select :blood, [['Blood Group',nil],'AB+','AB-','A+','A-','B+','B-','O+','O-']%></td>
     <td><%= f.label "Gender "%><font color="red">*</font></td>
     <td><%= f.select :gender, [['Gender',nil],'Male','Female','Other'], :required => true%></td>
   </tr>
   <tr>
     <td><%= f.label "Salary per annum "%><font color="red">*</font></td>
-    <td><%= f.number_field :salary_per_annum, :required => true, :min => 0%></td>
+    <td><%= f.number_field :spa, :required => true, :min => 0%></td>
     <td><%= f.label "Phone Number "%><font color="red">*</font></td>
     <td><%= f.text_field :phone, :pattern=>'\d*', :maxlength=>10, :minlength=>10, :required => true %></td>
   </tr>
@@ -57,20 +57,20 @@
   </tr>
   <tr>
     <td><%= f.label "Emergency phone Name "%><font color="red">*</font></td>
-    <td><%= f.text_field :emergency_name, :required => true%>
-    <span style="color:black;"><%= @user.errors[:emergency_name][0] rescue nil%></span></td>
+    <td><%= f.text_field :ename, :required => true%>
+    <span style="color:black;"><%= @user.errors[:ename][0] rescue nil%></span></td>
     <td><%= f.label "Emergency phone Number "%><font color="red">*</font></td>
-    <td><%= f.text_field :emergency_number, :pattern=>'\d*', :maxlength=>10, :minlength=>10, :required => true %></td>
+    <td><%= f.text_field :enumber, :pattern=>'\d*', :maxlength=>10, :minlength=>10, :required => true %></td>
   </tr>
   <tr>
     <td><%= f.label "Primary Skill "%><font color="red">*</font></td>
-    <td><%= f.text_field :primary_skill, :required => true%></td>
+    <td><%= f.text_field :ps, :required => true%></td>
     <td><%= f.label "Secondary Skill 1"%></td>
-    <td><%= f.text_field :secondary_skill1%></td>
+    <td><%= f.text_field :ss1%></td>
   </tr>
   <tr>
     <td><%= f.label "Secondary Skill 2"%></td>
-    <td><%= f.text_field :secondary_skill2%></td>
+    <td><%= f.text_field :ss2%></td>
   </tr>
   <tr>
     <td colspan="4"><label><h3><b>LOGIN DETAILS</b></h3></label></td>

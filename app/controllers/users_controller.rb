@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @user.salary_per_month = @user.salary_per_annum/12
+    @user.spm = @user.spa/12
   end
 
   def edit
@@ -50,7 +50,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation, :fname, :lname, :age, :date_of_joining, :salary_per_annum, :salary_per_month, :phone, :address, :blood_type, :emergency_name, :emergency_number, :primary_skill, :secondary_skill1, :secondary_skill2, :notice, :gender, :state, :pincode, :city, :country)
+    params.require(:user).permit(:email, :password, :password_confirmation, :fname, :lname, :age, :date_of_joining, :spa, :spm, :phone, :address, :blood, :ename, :enumber, :ps, :ss1, :ss2, :notice, :gender, :state, :pincode, :city, :country)
   end
 
   def admin?
