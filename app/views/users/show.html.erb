@@ -17,7 +17,7 @@
 		<% if session[:user_type]=='admin'%>
     <a href="/users"><img src="http://www.exalogic.in/wp-content/uploads/2018/08/exalogic.png" alt="Exalogic Solutions"></a><br>
     <a href="/users/new">Employee Registration</a>
-    <a href="http://www.exalogic.in/">About Us</a>
+    <a href="http://www.exalogic.in/" target="_blank">About Us</a>
     <%= link_to "Logout", logout_path, method: :delete, data: {confirm: "Do you want to logout?"} %>
 		<% else %>
 		<a href="#"><img src="http://www.exalogic.in/wp-content/uploads/2018/08/exalogic.png" alt="Exalogic Solutions"></a><br>
@@ -48,15 +48,15 @@
   </tr>
   <tr>
   	<td><strong>Date of Joining:</strong></td>
-	<td><%= @user.doj %></td>
+	<td><%= @user.date_of_joining %></td>
 	<td></td>
 	<td></td>
   </tr>
   <tr>
 	<td><strong>Email:</strong></td>
 	<td><%= @user.email %></td>
-	<td><strong>Mobile:</strong></td>
-	<td><%= @user.contact %></td>
+	<td><strong>Mobile Number:</strong></td>
+	<td><%= @user.phone %></td>
     </tr>
   <tr>
   	<td><strong>Address:</strong></td>
@@ -77,9 +77,9 @@
 	<td><%= @user.blood_type %></td>
   </tr>
   <tr>
-	<td><strong>Emergency Contact Name:</strong></td>
+	<td><strong>Emergency phone Name:</strong></td>
 	<td><%= @user.emergency_name %></td>
-	<td><strong>Emergency Contact Number:</strong></td>
+	<td><strong>Emergency phone Number:</strong></td>
 	<td><%= @user.emergency_number%></td>
   </tr>
   <tr>
