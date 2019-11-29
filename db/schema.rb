@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2019_11_28_043652) do
     t.string "fname"
     t.string "lname"
     t.integer "age"
-    t.date "date_of_joining"
+    t.date "doj"
     t.decimal "salary_per_annum"
     t.decimal "salary_per_month"
     t.string "contact"
